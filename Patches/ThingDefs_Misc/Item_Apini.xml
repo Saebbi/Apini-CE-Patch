@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="ApiniApron"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>1.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+  	<xpath>*/ThingDef[defName="ApiniApron"]/equippedStatOffsets/MoveSpeed</xpath>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="ApiniSatchel"]/statBases</xpath>
+		<value>
+			<Bulk>2</Bulk>
+			<WornBulk>1</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="ApiniRuff"]/statBases</xpath>
+		<value>
+			<Bulk>2</Bulk>
+			<WornBulk>0.5</WornBulk>
+    </value>
+  </Operation>
+  
+</Patch>
+
